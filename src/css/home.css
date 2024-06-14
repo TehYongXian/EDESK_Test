@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+}
+
+.treeStructureMenu {
+background-color: pink;
+margin: 10px;
+padding: 10px;
+height: 75vh;
+}
+
+.Table {
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+    height: 75vh;
+    width: 70vw;
+}
