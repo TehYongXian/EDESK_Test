@@ -1,0 +1,47 @@
+.tree-structure-menu {
+    font-family: Arial, sans-serif;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .tree-structure-menu ul {
+    list-style-type: none;
+    padding-left: 10px;
+  }
+  
+  .tree-structure-menu li {
+    margin: 5px 0;
+  }
+  
+  .tree-structure-menu li span {
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    border: 1px solid #ddd; /* Border around each tree item */
+  }
+  
+  .tree-structure-menu li span:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .TreeBorder {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .city-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+  .city-item:hover {
+    background-color: #e0e0e0;
+  }
