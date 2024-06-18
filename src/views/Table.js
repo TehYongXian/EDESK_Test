@@ -1,45 +1,112 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/table.css';
 
-const Table = () => {
-  // Sample data for the table
-  const data = [
-    { id: 1, name: 'John Doe', address: '123 Main St', city: 'New York', pinCode: '10001', country: 'USA' },
-    { id: 2, name: 'Jane Smith', address: '456 Elm St', city: 'Los Angeles', pinCode: '90001', country: 'USA' },
-    
-  ];
+const Table = ({ data }) => {
+  const itemsPerPage = 5; // Number of items to show per page
+  const [currentPage, setCurrentPage] = useState(1);
+  const [pageNumbers, setPageNumbers] = useState([]);
+
+  const totalPages = Math.ceil(data.length / itemsPerPage);
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
+
+  const handleAction = (action, item) => {
+    // Handle the action (view, edit, delete) for the item
+    console.log(`${action} action on`, item);
+  };
+
+  const visibleDataCount = currentItems.length;
+  const totalDataCount = data.length;
+
+
+  useEffect(() => {
+    const calculatePageNumbers = () => {
+      const pageNeighbours = 2; // Number of page numbers to display before and after current page
+
+      let startPage = Math.max(1, currentPage - pageNeighbours);
+      let endPage = Math.min(totalPages, currentPage + pageNeighbours);
+
+      const pages = [...Array(endPage - startPage + 1).keys()].map((i) => startPage + i);
+
+      setPageNumbers(pages);
+    };
+
+    calculatePageNumbers();
+  }, [currentPage, totalPages]);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const handleNextPage = () => {
+    setCurrentPage(currentPage + 1);
+  };
+
+  const handlePrevPage = () => {
+    setCurrentPage(currentPage - 1);
+  };
 
   return (
-    <table className="data-table">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Name</th>
-          <th>Address</th>
-          <th>City</th>
-          <th>Pin Code</th>
-          <th>Country</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        {data.map((row, index) => (
-          <tr key={row.id}>
-            <td>{index + 1}</td>
-            <td>{row.name}</td>
-            <td>{row.address}</td>
-            <td>{row.city}</td>
-            <td>{row.pinCode}</td>
-            <td>{row.country}</td>
-            <td>
-              <button className="action-button view-button">View</button>
-              <button className="action-button edit-button">Edit</button>
-              <button className="action-button delete-button">Delete</button>
-            </td>
+    <div className='table_container'>
+      <h3>Customer Details</h3>
+      <table className="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>Postcode</th>
+            <th>Country</th>
+            <th>Action</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {currentItems.map((item, index) => (
+            <tr key={item.id}>
+              <td>{indexOfFirstItem + index + 1}</td>
+              <td>{item.name}</td>
+              <td>{item.address}</td>
+              <td>{item.city}</td>
+              <td>{item.postcode}</td>
+              <td>{item.country}</td>
+              <td>
+                <button onClick={() => handleAction('view', item)}>View</button>
+                <button onClick={() => handleAction('edit', item)}>Edit</button>
+                <button onClick={() => handleAction('delete', item)}>Delete</button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      
+      <div className='pagination-container'>
+        <div >
+          <p>Showing {visibleDataCount} out of {totalDataCount} data</p>
+        </div>
+        <div>
+          <button onClick={handlePrevPage} disabled={currentPage === 1} className='pagination-button'>
+          《
+          </button>
+          {pageNumbers.map((pageNumber) => (
+            <button
+            key={pageNumber}
+            className={`pagination-button ${pageNumber === currentPage ? 'active' : ''}`}
+            onClick={() => handlePageChange(pageNumber)}
+          >
+            {pageNumber}
+          </button>
+          ))}
+          <button onClick={handleNextPage} disabled={currentPage === totalPages} className='pagination-button'>
+            》
+          </button>
+        </div>
+        
+        
+      </div>
+    </div>
   );
 };
 

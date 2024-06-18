@@ -1,0 +1,326 @@
+{
+  "Selangor": {
+    "Shah Alam": {
+      "companies": [
+        {
+          "id": 1,
+          "name": "ACME Corporation",
+          "address": "123 Main Street, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "40000",
+          "country": "Malaysia",
+          "action": "view"
+        },
+        {
+          "id": 2,
+          "name": "Widget Industries",
+          "address": "456 Elm Street, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "41000",
+          "country": "Malaysia",
+          "action": "edit"
+        },
+        {
+          "id": 4,
+          "name": "Initech",
+          "address": "321 Cedar Lane, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "43000",
+          "country": "Malaysia",
+          "action": "view"
+        },
+        {
+          "id": 5,
+          "name": "Cyberdyne Systems",
+          "address": "555 Pine Street, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "44000",
+          "country": "Malaysia",
+          "action": "edit"
+        },
+        {
+          "id": 6,
+          "name": "Wayne Enterprises",
+          "address": "777 Maple Avenue, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "45000",
+          "country": "Malaysia",
+          "action": "view"
+        },
+        {
+          "id": 7,
+          "name": "Umbrella Corporation",
+          "address": "999 Birch Street, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "46000",
+          "country": "Malaysia",
+          "action": "edit"
+        },
+        {
+          "id": 8,
+          "name": "Stark Industries",
+          "address": "111 Pinecrest Drive, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "47000",
+          "country": "Malaysia",
+          "action": "delete"
+        },
+        {
+          "id": 9,
+          "name": "Weyland-Yutani Corporation",
+          "address": "333 Willow Lane, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "48000",
+          "country": "Malaysia",
+          "action": "view"
+        },
+        {
+          "id": 10,
+          "name": "Tyrell Corporation",
+          "address": "444 Oakwood Avenue, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "49000",
+          "country": "Malaysia",
+          "action": "edit"
+        },
+        {
+          "id": 11,
+          "name": "Wernham Hogg",
+          "address": "666 Chestnut Street, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "50000",
+          "country": "Malaysia",
+          "action": "delete"
+        },
+        {
+          "id": 12,
+          "name": "Monsters, Inc.",
+          "address": "888 Magnolia Drive, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "51000",
+          "country": "Malaysia",
+          "action": "view"
+        },
+        {
+          "id": 13,
+          "name": "LexCorp",
+          "address": "222 Cedar Street, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "52000",
+          "country": "Malaysia",
+          "action": "edit"
+        },
+        {
+          "id": 14,
+          "name": "Acme Ltd.",
+          "address": "777 Oakwood Avenue, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "53000",
+          "country": "Malaysia",
+          "action": "delete"
+        },
+        {
+          "id": 15,
+          "name": "Stark Solutions",
+          "address": "111 Maple Drive, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "54000",
+          "country": "Malaysia",
+          "action": "view"
+        },
+        {
+          "id": 16,
+          "name": "Wayne Enterprises",
+          "address": "999 Pinecrest Drive, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "55000",
+          "country": "Malaysia",
+          "action": "edit"
+        },
+        {
+          "id": 17,
+          "name": "Globex Industries",
+          "address": "777 Elm Street, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "56000",
+          "country": "Malaysia",
+          "action": "delete"
+        },
+        {
+          "id": 18,
+          "name": "Innovate Corp.",
+          "address": "333 Pine Street, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "57000",
+          "country": "Malaysia",
+          "action": "view"
+        },
+        {
+          "id": 19,
+          "name": "Tech Solutions",
+          "address": "222 Maple Lane, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "58000",
+          "country": "Malaysia",
+          "action": "edit"
+        },
+        {
+          "id": 20,
+          "name": "Data Systems",
+          "address": "888 Oak Avenue, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "59000",
+          "country": "Malaysia",
+          "action": "delete"
+        },
+        {
+          "id": 21,
+          "name": "City Motors",
+          "address": "444 Pinecrest Drive, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "60000",
+          "country": "Malaysia",
+          "action": "view"
+        },
+        {
+          "id": 22,
+          "name": "BuildCo",
+          "address": "666 Elm Street, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "61000",
+          "country": "Malaysia",
+          "action": "edit"
+        },
+        {
+          "id": 23,
+          "name": "Fine Foods Ltd.",
+          "address": "222 Main Street, Shah Alam",
+          "city": "Shah Alam",
+          "postcode": "62000",
+          "country": "Malaysia",
+          "action": "delete"
+        }
+      ]
+    },
+    "Klang": {
+      "companies": [
+        {
+          "id": 3,
+          "name": "Globex Corporation",
+          "address": "789 Oak Avenue, Klang",
+          "city": "Klang",
+          "postcode": "41050",
+          "country": "Malaysia",
+          "action": "delete"
+        },
+        {
+          "id": 4,
+          "name": "Initech",
+          "address": "321 Cedar Lane, Klang",
+          "city": "Klang",
+          "postcode": "41200",
+          "country": "Malaysia",
+          "action": "view"
+        }
+      ]
+    }
+  },
+  "Penang": {
+    "George Town": {
+      "companies": [
+        {
+          "id": 5,
+          "name": "Cyberdyne Systems",
+          "address": "555 Pine Street, George Town",
+          "city": "George Town",
+          "postcode": "10000",
+          "country": "Malaysia",
+          "action": "edit"
+        },
+        {
+          "id": 6,
+          "name": "Wayne Enterprises",
+          "address": "777 Maple Avenue, George Town",
+          "city": "George Town",
+          "postcode": "10200",
+          "country": "Malaysia",
+          "action": "view"
+        }
+      ]
+    }
+  },
+  "Johor": {
+    "Johor Bahru": {
+      "companies": [
+        {
+          "id": 7,
+          "name": "Umbrella Corporation",
+          "address": "999 Birch Street, Johor Bahru",
+          "city": "Johor Bahru",
+          "postcode": "80000",
+          "country": "Malaysia",
+          "action": "edit"
+        },
+        {
+          "id": 8,
+          "name": "Stark Industries",
+          "address": "111 Pinecrest Drive, Johor Bahru",
+          "city": "Johor Bahru",
+          "postcode": "80200",
+          "country": "Malaysia",
+          "action": "delete"
+        }
+      ]
+    },
+    "Iskandar Puteri": {
+      "companies": [
+        {
+          "id": 9,
+          "name": "Weyland-Yutani Corporation",
+          "address": "333 Willow Lane, Iskandar Puteri",
+          "city": "Iskandar Puteri",
+          "postcode": "81550",
+          "country": "Malaysia",
+          "action": "view"
+        }
+      ]
+    }
+  },
+  "Perak": {
+    "Ipoh": {
+      "companies": [
+        {
+          "id": 10,
+          "name": "Tyrell Corporation",
+          "address": "444 Oakwood Avenue, Ipoh",
+          "city": "Ipoh",
+          "postcode": "30000",
+          "country": "Malaysia",
+          "action": "edit"
+        },
+        {
+          "id": 11,
+          "name": "Wernham Hogg",
+          "address": "666 Chestnut Street, Ipoh",
+          "city": "Ipoh",
+          "postcode": "30200",
+          "country": "Malaysia",
+          "action": "delete"
+        }
+      ]
+    },
+    "Taiping": {
+      "companies": [
+        {
+          "id": 12,
+          "name": "Monsters, Inc.",
+          "address": "888 Magnolia Drive, Taiping",
+          "city": "Taiping",
+          "postcode": "34000",
+          "country": "Malaysia",
+          "action": "view"
+        }
+      ]
+    }
+  }
+}

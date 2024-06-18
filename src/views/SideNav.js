@@ -15,6 +15,15 @@ const SideNav = ({ isOpen, toggleSidebar }) => {
         <li>
           <Link to="/login" onClick={toggleSidebar}>Login</Link>
         </li>
+        <li>
+          <p>Profile</p>
+        </li>
+        <li>
+          <p>Messages</p>
+        </li>
+        <li>
+          <p>Settings</p>
+        </li>
       </ul>
     </nav>
   );

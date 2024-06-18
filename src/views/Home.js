@@ -1,21 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../css/home.css';
-import TreeStructureMenu from './TreeStructureMenu';
-import Table from './Table';
+import TreeStructureMenu from '../views/TreeStructureMenu';
+import Table from '../views/Table';
+
+import sampleData from '../sampleData.json'; // Adjust the path as per your project structure
 
 function Home() {
+  const [selectedData, setSelectedData] = useState([]);
+
   return (
     <div>
       <h1>Home Tab.</h1>
       <div className="container">
         <div className="treeStructureMenu">
-          <TreeStructureMenu/>
+          <TreeStructureMenu data={sampleData} setData={setSelectedData} />
         </div>
         <div className="Table">
-          <Table/>
+          <Table data={selectedData} />
         </div>
       </div>
-      
     </div>
   );
 }

@@ -50,3 +50,14 @@
 .toggle-button:hover {
   background-color: #0056b3;
 }
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+  }
+
+  .toggle-button {
+    left: 90%;
+  }
+}
