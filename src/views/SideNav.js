@@ -12,9 +12,9 @@ const SideNav = ({ isOpen, toggleSidebar }) => {
         <li>
           <Link to="/" onClick={toggleSidebar}>Home</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/login" onClick={toggleSidebar}>Login</Link>
-        </li>
+        </li> */}
         <li>
           <p>Profile</p>
         </li>

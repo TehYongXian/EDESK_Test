@@ -13,7 +13,7 @@
   text-align: left;
 }
 
-.table button {
+.table {
   margin: 0 5px;
   padding: 5px 10px;
   border: none;
@@ -29,6 +29,7 @@
 .table_container {
   border: solid 1px black;
   padding: 5px;
+  width: 70vw;
 }
 
 
@@ -75,4 +76,26 @@
   text-align: center;
   font-style: italic;
   color: #666;
+}
+
+
+.tableViewBtn {
+  padding: 5px;
+  margin: 2px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 16px;
+}
+.tableEditBtn {
+  padding: 5px;
+  margin: 2px;
+  background-color: yellow;
+  border-radius: 16px;
+}
+.tableDeleteBtn {
+  padding: 5px;
+  margin: 2px;
+  background-color: red;
+  color: white;
+  border-radius: 16px;
 }
