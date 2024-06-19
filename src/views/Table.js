@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/table.css';
 
 const Table = ({ data }) => {
@@ -73,9 +74,12 @@ const Table = ({ data }) => {
               <td>{item.postcode}</td>
               <td>{item.country}</td>
               <td>
-                <button onClick={() => handleAction('view', item)}>View</button>
-                <button onClick={() => handleAction('edit', item)}>Edit</button>
-                <button onClick={() => handleAction('delete', item)}>Delete</button>
+                <Link to={`/view/${item.id}`}>
+                  <button className="tableViewBtn">View</button>
+                </Link>
+                {/* <button className='tableViewBtn' onClick={() => handleAction('view', item)}>View</button> */}
+                <button className='tableEditBtn' onClick={() => handleAction('edit', item)}>Edit</button>
+                <button className='tableDeleteBtn' onClick={() => handleAction('delete', item)}>Delete</button>
               </td>
             </tr>
           ))}

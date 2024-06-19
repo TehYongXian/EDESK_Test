@@ -1,0 +1,86 @@
+/* src/css/login.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  form h2 {
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  form .loginForm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  form .loginInput {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  form .error {
+    color: red;
+    margin-bottom: 20px;
+  }
+  
+  form .loginButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form .loginButton:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 500px) {
+    form {
+      padding: 20px;
+    }
+  
+    form .loginForm {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    form label {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  
+    form .loginInput {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+  

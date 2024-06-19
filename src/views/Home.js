@@ -10,7 +10,7 @@ function Home() {
 
   return (
     <div>
-      <h1>Home Tab.</h1>
+      <h1>Home Tab</h1>
       <div className="container">
         <div className="treeStructureMenu">
           <TreeStructureMenu data={sampleData} setData={setSelectedData} />
