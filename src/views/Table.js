@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../css/table.css';
 
 const Table = ({ data }) => {
-  const itemsPerPage = 5; // Number of items to show per page
+  const itemsPerPage = 5;
   const [currentPage, setCurrentPage] = useState(1);
   const [pageNumbers, setPageNumbers] = useState([]);
 
@@ -14,7 +14,6 @@ const Table = ({ data }) => {
   const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
 
   const handleAction = (action, item) => {
-    // Handle the action (view, edit, delete) for the item
     console.log(`${action} action on`, item);
   };
 
@@ -24,7 +23,7 @@ const Table = ({ data }) => {
 
   useEffect(() => {
     const calculatePageNumbers = () => {
-      const pageNeighbours = 2; // Number of page numbers to display before and after current page
+      const pageNeighbours = 2; /
 
       let startPage = Math.max(1, currentPage - pageNeighbours);
       let endPage = Math.min(totalPages, currentPage + pageNeighbours);

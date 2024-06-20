@@ -1,4 +1,3 @@
-// src/views/Login.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../css/login.css';
