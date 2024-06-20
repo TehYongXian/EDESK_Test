@@ -2,6 +2,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
+  }
+
+  .homeContainer {
+    padding: 10px;
+    margin: 10px auto;
   }
   
   .treeStructureMenu {

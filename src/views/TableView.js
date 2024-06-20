@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import sampleData from '../sampleData.json';
+import '../css/tableView.css';
 
 const findCompanyById = (id) => {
   for (const state in sampleData) {
