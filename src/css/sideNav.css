@@ -36,15 +36,16 @@
 }
 
 .toggle-button {
-  position: fixed;
-  top: 20px;
-  left: 20px;
+  position: absolute;
+  /* top: 20px;
+  left: 20px; */
   background-color: #007bff;
+  border-radius: 6px;
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
-  z-index: 1;
+  /* margin-bottom: 20px; */
 }
 
 .toggle-button:hover {
